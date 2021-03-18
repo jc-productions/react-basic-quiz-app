@@ -1,0 +1,239 @@
+.header {
+  width: 100vw;
+  background-color: #fff;
+  padding: 2rem 0;
+  position: relative;
+  border-bottom: 3px solid #3bd16f;
+  position: relative;
+}
+
+.header__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mark__container {
+  position: absolute;
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+  border: 3px solid #989898;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mark__inner {
+  background-color: #fff;
+  text-align: center;
+  color: #989898;
+}
+
+.mark__inner_percent {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  transition: 0.3s ease-in;
+}
+
+.ho_divider::after {
+  content: ' ';
+  width: 1px;
+  height: 20px;
+  border-left: 2px solid #e3e3e3;
+  padding: 0;
+  margin: 0 12px;
+}
+
+.quiz__body {
+  padding: 4rem 0 6rem 0;
+  width: 100vw;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  background-color: transparent;
+}
+
+.quiz__question_container {
+  max-width: 40%;
+  background-color: transparent;
+}
+
+.quiz__question_category {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  background-color: #e3e3e3;
+  font-weight: 600;
+  width: fit-content;
+}
+.quiz__question {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.quiz__answer_list {
+  width: 50%;
+  position: relative;
+  background-color: transparent;
+}
+
+.quiz__answer_list_button {
+  display: block;
+  padding: 1.2rem;
+  width: 77%;
+  margin: 1rem 4rem 0.7rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+}
+
+.quiz__answer_list_button:hover {
+  transform: translate(7%);
+}
+
+.quiz__answer_list_button_correct {
+  background-color: #3bd16f;
+  color: #fff;
+}
+
+.quiz__answer_list_button_incorrect {
+  background-color: #d04141;
+  color: #fff;
+}
+
+.quiz__answer_list_arrow {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  background-color: transparent;
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+.quiz__answer_list_arrow:hover {
+  filter: brightness(80%);
+  transition: 0.3s ease;
+}
+
+.counter_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+}
+
+.counter_list__node {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #989898;
+  color: #fff;
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.counter_list__node::before {
+  content: '';
+  width: 20px;
+  height: 4px;
+  position: absolute;
+  background-color: #989898;
+  top: 50%;
+  left: -40%;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.counter_list__node_text {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.current_node {
+  background-color: #3bd16f;
+  border: 1px solid #989898;
+  position: relative;
+  transition: 0.3s ease-in;
+}
+
+.current_node::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #989898;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 4.5rem;
+  margin-top: 1.7rem;
+  background-color: #3bd16f;
+  color: #fff;
+  border-radius: 10px;
+}
+.result__button {
+  margin-top: 1.7rem;
+  padding: 1rem;
+  background-color: #e3e3e381;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.result__button:hover {
+  transform: translateY(10%);
+  background-color: #e3e3e3d7;
+}
+
+.result__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.result__score {
+  font-size: 7rem;
+  padding: 0.8rem 0 0;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footer {
+  width: 100vw;
+  height: 5rem;
+  background-color: #fff;
+  padding: 1rem 0;
+  border-top: 3px solid #3bd16f;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
